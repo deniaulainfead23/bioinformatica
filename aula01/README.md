@@ -5,6 +5,8 @@
 **Abordagem:** introdutória, visual e prática  
 **Pré-requisito:** nenhum conhecimento avançado de Biologia Molecular
 
+[▶ Abrir a prática no Google Colab](https://colab.research.google.com/github/deniaulainfead23/bioinformatica/blob/main/aula01/aula01_colab.ipynb)
+
 ---
 
 ## Objetivos da aula
@@ -208,7 +210,9 @@ Na Bioinformática isso aparece, por exemplo, quando leituras de sequenciamento 
 
 ## 35-45 min | Prática rápida em Python
 
-Abra o Google Colab ou execute `pratica.py`.
+Opção mais simples: [abrir diretamente no Google Colab](https://colab.research.google.com/github/deniaulainfead23/bioinformatica/blob/main/aula01/aula01_colab.ipynb).
+
+Também é possível executar `pratica.py` localmente.
 
 ### Passo 1 - Uma sequência é um dado
 
