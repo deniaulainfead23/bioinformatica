@@ -1,52 +1,178 @@
-# Aula 01 - Bioinformática: quando a Biologia vira dado
+# Aula 01 - Bioinformática: quando diferentes áreas se encontram
 
 **Duração:** 50 minutos  
 **Público:** estudantes de Tecnologia e Saúde / Biomedicina  
-**Abordagem:** introdutória, visual e prática  
-**Pré-requisito:** nenhum conhecimento avançado de Biologia Molecular
+**Abordagem:** introdutória, interdisciplinar e progressiva  
+**Pré-requisito:** nenhum conhecimento prévio de Python ou Bioinformática
 
 [▶ Abrir a prática no Google Colab](https://colab.research.google.com/github/deniaulainfead23/bioinformatica/blob/main/aula01/aula01_colab.ipynb)
 
 ---
 
-## Objetivos da aula
+# Ideia central da aula
+
+Antes de apresentar ferramentas, bancos de dados ou programação, o estudante precisa compreender **o que é Bioinformática, por que ela existe e quem trabalha nessa área**.
+
+A sequência didática desta aula será:
+
+```text
+O QUE É BIOINFORMÁTICA?
+          ↓
+QUAIS ÁREAS PARTICIPAM?
+          ↓
+O QUE CADA PROFISSIONAL CONTRIBUI?
+          ↓
+QUAIS TECNOLOGIAS SÃO UTILIZADAS?
+          ↓
+POR QUE EXISTEM BANCOS DE DADOS BIOLÓGICOS?
+          ↓
+COMO A COMPUTAÇÃO ANALISA ESSES DADOS?
+```
+
+---
+
+# Objetivos da aula
 
 Ao final da aula, o estudante deverá ser capaz de:
 
-1. explicar, em linguagem simples, o que é Bioinformática;
-2. reconhecer a integração entre Biologia, Computação e Estatística;
-3. compreender que sequências de DNA e proteínas podem ser tratadas como dados;
-4. identificar a função geral de bancos como GenBank/NCBI, UniProt e PDB;
-5. reconhecer a importância da qualidade e do pré-processamento dos dados;
-6. executar uma análise elementar de sequências com Python.
+1. explicar o conceito de Bioinformática;
+2. reconhecer seu caráter interdisciplinar;
+3. identificar diferentes profissionais e conhecimentos envolvidos em projetos de Bioinformática;
+4. reconhecer algumas tecnologias utilizadas na área;
+5. compreender por que dados biológicos precisam ser armazenados e organizados;
+6. relacionar bancos de dados tradicionais aos bancos de dados biológicos;
+7. executar uma análise computacional elementar de uma sequência.
 
 ---
 
 # Roteiro de 50 minutos
 
-## 0-5 min | A pergunta que abre a aula
+## 0-8 min | O que é Bioinformática?
 
-Comece perguntando:
+Comece com uma pergunta simples:
 
-> **Se eu entregar ao computador uma sequência com milhões de letras A, T, C e G, como ele consegue transformar isso em informação útil para a saúde?**
+> **O que acontece quando a quantidade de dados produzida pela Biologia se torna tão grande que uma pessoa não consegue mais analisá-la manualmente?**
 
-Explique que essa é uma das perguntas centrais da Bioinformática.
+A resposta leva naturalmente à Bioinformática.
 
-### Frase-chave para o quadro
+### Definição para apresentar
 
-**Bioinformática = Biologia + Computação + Estatística aplicada a dados biológicos.**
+> **Bioinformática é uma área interdisciplinar que utiliza métodos computacionais, algoritmos, bancos de dados, estatística e conhecimentos biológicos para armazenar, organizar, processar e analisar dados biológicos.**
 
-A Bioinformática desenvolve métodos, algoritmos e softwares para obter, armazenar, organizar e analisar dados biológicos.
+Uma forma simples de colocar no quadro:
+
+```text
+BIOLOGIA
+   +
+COMPUTAÇÃO
+   +
+ESTATÍSTICA
+   +
+CIÊNCIA DE DADOS
+   ↓
+BIOINFORMÁTICA
+```
+
+Mas é importante explicar que a Bioinformática não pertence exclusivamente a nenhuma dessas áreas.
+
+Ela existe justamente **na integração entre diferentes conhecimentos**.
+
+### Exemplos de dados que podem ser analisados
+
+- sequências de DNA;
+- RNA;
+- proteínas;
+- expressão gênica;
+- estruturas moleculares;
+- dados de microbioma;
+- variantes genéticas;
+- grandes conjuntos de dados biomédicos.
 
 ---
 
-## 5-12 min | O mínimo de Biologia que precisamos saber
+## 8-16 min | Quem trabalha com Bioinformática?
 
-Para esta primeira aula, basta trabalhar com quatro ideias:
+Esse é um ponto importante para mostrar aos estudantes que Bioinformática normalmente é um **trabalho em equipe**.
+
+Um único profissional dificilmente domina profundamente todas as áreas necessárias.
+
+### Biólogo / Biomédico
+
+Pode contribuir com conhecimentos sobre:
+
+- células;
+- DNA e RNA;
+- genes;
+- proteínas;
+- organismos;
+- funcionamento biológico;
+- coleta e interpretação de amostras;
+- significado biológico dos resultados.
+
+### Profissional de Computação
+
+Pode contribuir com:
+
+- programação;
+- algoritmos;
+- estruturas de dados;
+- banco de dados;
+- processamento de grandes volumes de dados;
+- desenvolvimento de software;
+- automação;
+- computação em nuvem;
+- inteligência artificial.
+
+### Estatístico / Cientista de Dados
+
+Pode contribuir com:
+
+- organização dos dados;
+- análise estatística;
+- visualização;
+- identificação de padrões;
+- construção e validação de modelos;
+- tratamento de incerteza;
+- interpretação quantitativa.
+
+### Farmacêutico / Pesquisador da Saúde
+
+Dependendo do projeto, pode contribuir com:
+
+- estudos de medicamentos;
+- interação entre moléculas;
+- identificação de possíveis alvos terapêuticos;
+- interpretação de resultados laboratoriais;
+- desenho experimental.
+
+### Engenheiro de Software / Analista de Sistemas
+
+Pode participar do desenvolvimento de:
+
+- plataformas de análise;
+- sistemas laboratoriais;
+- APIs;
+- pipelines automatizadas;
+- interfaces para pesquisadores;
+- sistemas de armazenamento e processamento.
+
+### Uma pergunta interessante para a turma
+
+> **Quem é o bioinformata: o biólogo que programa ou o programador que conhece Biologia?**
+
+A resposta adequada é:
+
+> **Pode ser qualquer um dos dois — e muitos outros perfis. Bioinformática é essencialmente interdisciplinar.**
+
+---
+
+## 16-21 min | O mínimo de Biologia necessário para começar
+
+Nesta primeira aula, trabalhe somente quatro conceitos.
 
 ### DNA
 
-Pode ser representado computacionalmente como uma sequência formada principalmente por quatro símbolos:
+Pode ser representado computacionalmente como uma sequência formada por quatro símbolos principais:
 
 ```text
 A  T  C  G
@@ -57,7 +183,7 @@ A  T  C  G
 - C = citosina
 - G = guanina
 
-Para o computador, uma sequência pode ser manipulada inicialmente como uma **string**.
+Do ponto de vista computacional, uma sequência pode inicialmente ser representada como uma **string**:
 
 ```python
 sequencia = "ATGCGTACGTTAGC"
@@ -65,7 +191,7 @@ sequencia = "ATGCGTACGTTAGC"
 
 ### Gene
 
-Uma região do DNA que contém informação biológica. Nesta aula não precisamos aprofundar os mecanismos moleculares: o ponto principal é perceber que o gene pode ser representado e analisado computacionalmente por meio de sua sequência e de suas anotações.
+Uma região do DNA associada a uma informação funcional. Computacionalmente, pode ser representada por sua sequência e por diversos metadados.
 
 ### Genoma
 
@@ -73,237 +199,347 @@ Conjunto do material genético de um organismo.
 
 ### Proteoma
 
-Conjunto de proteínas e variantes proteicas presentes em determinada condição biológica.
+Conjunto de proteínas e variantes de proteínas presentes em determinada condição biológica.
 
-### Ponte com Computação
+### Ponte entre as áreas
 
 ```text
-BIOLOGIA                 COMPUTAÇÃO
-DNA                      sequência/string
-Gene                     registro + sequência
-Genoma                    grande conjunto de dados
-Proteína                  sequência de aminoácidos
-Banco biológico           banco de dados
-Comparar sequências       algoritmo de alinhamento
-Experimento virtual       análise in silico
+BIOLOGIA                    COMPUTAÇÃO
+DNA                         sequência/string
+Gene                        registro + sequência
+Genoma                      grande conjunto de dados
+Proteína                    sequência de aminoácidos
+Comparar sequências         algoritmo
+Organizar informações       banco de dados
+Experimento computacional   análise in silico
 ```
 
 ---
 
-## 12-18 min | Por que surgiu a Bioinformática?
+## 21-28 min | Tecnologias utilizadas na Bioinformática
 
-O avanço do sequenciamento produziu volumes cada vez maiores de dados biológicos. O Projeto Genoma Humano, iniciado em 1990 e concluído em 2003, é um marco importante para mostrar aos estudantes por que armazenar e analisar dados passou a exigir ferramentas computacionais.
+Agora, depois de entender a área e seus participantes, apresente as tecnologias.
 
-Explique assim:
+Não é necessário aprofundar todas. O objetivo é mostrar o ecossistema.
 
-> Produzir o dado não basta. Precisamos armazenar, organizar, comparar, analisar e interpretar esse dado.
+### Linguagens de programação
 
-Essa necessidade aproxima diretamente a Bioinformática de Banco de Dados, Algoritmos, Ciência de Dados e Estatística.
+**Python**
+
+Muito utilizado para:
+
+- manipulação de dados;
+- automação;
+- análise de sequências;
+- inteligência artificial;
+- construção de pipelines.
+
+**R**
+
+Muito utilizado em:
+
+- estatística;
+- análise de dados biológicos;
+- expressão gênica;
+- visualização científica.
+
+### Linux
+
+Grande parte das ferramentas de Bioinformática é executada em ambientes Linux, principalmente em servidores e clusters de processamento.
+
+### Computação em nuvem
+
+Projetos de Bioinformática podem gerar grandes volumes de dados. Por isso, processamento e armazenamento em nuvem são cada vez mais relevantes.
+
+### Inteligência Artificial e Machine Learning
+
+Podem ser utilizados para:
+
+- classificação;
+- reconhecimento de padrões;
+- predição;
+- análise de imagens biomédicas;
+- estudo de proteínas;
+- descoberta de fármacos.
+
+### Ferramentas especializadas
+
+Exemplos que aparecerão durante a disciplina:
+
+- BLAST;
+- Clustal;
+- ferramentas de sequenciamento;
+- ferramentas de análise estrutural;
+- plataformas para análise de microbioma.
+
+### Conceito importante: pipeline
+
+Em Bioinformática é comum organizar várias etapas em sequência:
+
+```text
+DADO BRUTO
+    ↓
+CONTROLE DE QUALIDADE
+    ↓
+PRÉ-PROCESSAMENTO
+    ↓
+ANÁLISE
+    ↓
+COMPARAÇÃO
+    ↓
+VISUALIZAÇÃO
+    ↓
+INTERPRETAÇÃO
+```
+
+Explique aos estudantes que isso se parece muito com um fluxo de processamento de dados na Computação.
 
 ---
 
-## 18-25 min | Os grandes bancos de dados biológicos
+## 28-36 min | Entrando em Banco de Dados
+
+Agora faça a transição para um conhecimento que os estudantes da Computação provavelmente já reconhecem.
+
+Pergunte:
+
+> **Se milhões de pesquisadores produzem sequências de DNA e proteínas, onde essas informações ficam armazenadas?**
+
+A resposta é: **bancos de dados biológicos**.
+
+### Primeiro: relembrando Banco de Dados
+
+Um banco de dados é uma estrutura utilizada para **armazenar, organizar, relacionar e recuperar informações**.
+
+Em um sistema comum poderíamos ter:
+
+```text
+ALUNO
+-----------------------
+id
+nome
+email
+curso
+```
+
+Em Bioinformática poderíamos ter algo conceitualmente semelhante:
+
+```text
+GENE
+-----------------------
+id
+gene
+organismo
+cromossomo
+sequencia
+funcao
+```
+
+Ou ainda:
+
+```text
+PROTEINA
+-----------------------
+id
+nome
+organismo
+sequencia_aminoacidos
+funcao
+estrutura
+```
+
+### O dado biológico não é apenas uma sequência
+
+Uma sequência precisa estar acompanhada de **metadados**.
+
+Por exemplo:
+
+```text
+Sequência: ATGCGTAC...
+Organismo: Homo sapiens
+Gene: exemplo
+Cromossomo: 1
+Fonte: experimento X
+Identificador: ABC123
+Referência: artigo científico
+```
+
+É isso que transforma uma simples sequência de caracteres em um registro cientificamente utilizável.
+
+---
+
+## 36-41 min | Grandes bancos de dados biológicos
 
 Apresente apenas três nesta primeira aula.
 
-### 1. NCBI / GenBank
+### NCBI / GenBank
 
 **NCBI:** https://www.ncbi.nlm.nih.gov/  
 **GenBank:** https://www.ncbi.nlm.nih.gov/genbank/
 
 Use a analogia:
 
-> **GenBank é como uma enorme biblioteca de sequências de DNA.**
+> **O GenBank funciona como uma enorme biblioteca digital de sequências de nucleotídeos e suas informações associadas.**
 
-Mostre que uma busca pode trazer informações como:
+Uma consulta pode trazer informações como:
 
 - organismo;
-- nome do gene;
+- gene;
+- sequência;
 - localização;
-- sequência de nucleotídeos;
 - identificadores;
-- referências e anotações.
+- referências;
+- anotações.
 
-### 2. UniProt
+### UniProt
 
 https://www.uniprot.org/
 
-Banco voltado principalmente para **sequências e anotações de proteínas**.
+Voltado principalmente para **sequências e anotações de proteínas**.
 
-Analogia:
-
-> Se o GenBank ajuda a procurar DNA, o UniProt é uma grande referência para proteínas.
-
-### 3. Protein Data Bank - PDB
+### Protein Data Bank - PDB
 
 https://www.rcsb.org/
 
-Repositório de estruturas tridimensionais de moléculas biológicas, especialmente proteínas e ácidos nucleicos.
+Repositório de estruturas tridimensionais de biomoléculas, especialmente proteínas e ácidos nucleicos.
 
-Pergunte:
+### Pergunta para consolidar
 
-> Por que a forma tridimensional de uma proteína poderia ser importante na pesquisa de medicamentos?
+> **Qual é a diferença entre guardar apenas `ATGCGT...` em um arquivo de texto e possuir essa sequência em um banco de dados científico?**
 
-Não é necessário aprofundar docking nesta primeira aula; apenas introduza a ideia de que estrutura está relacionada a função e interação molecular.
+Resposta esperada:
 
----
-
-## 25-30 min | E onde entra o BLAST?
-
-**BLAST:** https://blast.ncbi.nlm.nih.gov/Blast.cgi
-
-Explique como um “mecanismo de busca por similaridade de sequências”.
-
-Se recebemos uma sequência desconhecida, podemos compará-la com sequências armazenadas em bancos de dados.
-
-O BLAST pode auxiliar em tarefas como:
-
-- encontrar sequências semelhantes;
-- identificar possíveis homologias;
-- auxiliar na identificação de organismos;
-- mapear sequências;
-- apoiar anotação de genes e proteínas.
-
-### Analogia para a turma
-
-> O Google procura textos semelhantes às palavras digitadas. O BLAST procura sequências biológicas semelhantes à sequência fornecida.
-
-Nesta aula apenas apresente o conceito. Uma aula posterior pode ser dedicada ao BLAST.
+> O banco associa a sequência a identificadores, organismo, origem, função, referências e outras informações necessárias para interpretação e reutilização científica.
 
 ---
 
-## 30-35 min | Antes de analisar: qualidade dos dados
+## 41-46 min | Banco de dados + algoritmo: onde entra o BLAST?
 
-Faça a ponte com Ciência de Dados.
+Agora fica mais fácil explicar o BLAST.
 
-Um algoritmo sofisticado não compensa dados ruins. Bases reais podem apresentar:
+O banco contém milhares ou milhões de sequências conhecidas.
 
-- dados ausentes;
-- inconsistências;
-- ruído;
-- redundância;
-- formatos diferentes.
+O pesquisador possui uma sequência de interesse.
 
-Apresente o fluxo:
+O algoritmo compara essa sequência com o banco.
 
 ```text
-COLETA
-  ↓
-PRÉ-PROCESSAMENTO
-  ↓
-ANÁLISE
-  ↓
-INTERPRETAÇÃO
+SEQUÊNCIA DESCONHECIDA
+        ↓
+      BLAST
+        ↓
+BANCO DE SEQUÊNCIAS
+        ↓
+SEQUÊNCIAS SEMELHANTES
+        ↓
+POSSÍVEL INTERPRETAÇÃO
 ```
 
-Cinco processos clássicos de pré-processamento que serão retomados em aulas posteriores:
+Explique como um **mecanismo de busca por similaridade de sequências**.
 
-1. limpeza;
-2. integração;
-3. redução;
-4. transformação;
-5. discretização.
+Analogia:
 
-Na Bioinformática isso aparece, por exemplo, quando leituras de sequenciamento precisam passar por controle de qualidade antes das análises.
+> O Google recebe palavras e procura documentos relacionados. O BLAST recebe uma sequência e procura sequências biologicamente semelhantes em bancos de dados.
+
+O BLAST pode apoiar:
+
+- identificação de sequências semelhantes;
+- busca por homologia;
+- identificação de organismos;
+- anotação;
+- localização de sequências.
 
 ---
 
-## 35-45 min | Prática rápida em Python
+## 46-50 min | Primeira experiência computacional
 
-Opção mais simples: [abrir diretamente no Google Colab](https://colab.research.google.com/github/deniaulainfead23/bioinformatica/blob/main/aula01/aula01_colab.ipynb).
+Abra o [Google Colab da Aula 01](https://colab.research.google.com/github/deniaulainfead23/bioinformatica/blob/main/aula01/aula01_colab.ipynb).
 
-Também é possível executar `pratica.py` localmente.
+Não tente ensinar Python formalmente nesta aula.
 
-### Passo 1 - Uma sequência é um dado
+Mostre apenas que o computador consegue receber uma sequência como dado:
 
 ```python
 sequencia = "ATGCGTACGTTAGC"
 
-print("Sequência:", sequencia)
-print("Tamanho:", len(sequencia))
+print(sequencia)
+print(len(sequencia))
 ```
 
-### Passo 2 - Contar bases
+Explique:
+
+- `sequencia` é o nome da variável;
+- `=` armazena o valor;
+- as aspas indicam um texto/string;
+- `print()` mostra uma informação;
+- `len()` calcula o comprimento.
+
+Depois conte uma base:
 
 ```python
-for base in "ATCG":
-    print(base, sequencia.count(base))
+print(sequencia.count("A"))
 ```
 
-### Passo 3 - Conteúdo GC
+E finalize:
 
-```python
-gc = (sequencia.count("G") + sequencia.count("C")) / len(sequencia) * 100
-print(f"GC: {gc:.2f}%")
-```
-
-Explique apenas que o **conteúdo GC** mede a proporção de G e C na sequência. Neste momento, o objetivo é mostrar como uma característica biológica pode ser transformada em uma variável quantitativa.
-
-### Passo 4 - Várias sequências
-
-Use o arquivo [`dados/sequencias_demo.csv`](dados/sequencias_demo.csv).
-
-```python
-import pandas as pd
-
-df = pd.read_csv("dados/sequencias_demo.csv")
-
-df["tamanho"] = df["sequencia"].str.len()
-df["gc_percentual"] = df["sequencia"].apply(
-    lambda s: 100 * (s.count("G") + s.count("C")) / len(s)
-)
-
-print(df)
-```
-
-Pergunte aos alunos:
-
-> **Qual sequência possui maior conteúdo GC?**
-
-Nesse ponto eles já fizeram uma pequena análise bioinformática.
+> **Hoje nós não aprendemos apenas uma linha de Python. Nós vimos que uma informação biológica pode ser representada, armazenada e processada computacionalmente. Esse é um dos fundamentos da Bioinformática.**
 
 ---
 
-## 45-50 min | Fechamento
+# Fechamento da aula
 
-Peça que os estudantes completem oralmente o fluxo:
+Coloque no quadro:
 
 ```text
-DADO BIOLÓGICO
-      ↓
-ARMAZENAMENTO
-      ↓
-PRÉ-PROCESSAMENTO
-      ↓
-ALGORITMO
-      ↓
-ANÁLISE
-      ↓
-INFORMAÇÃO BIOLÓGICA
+BIOINFORMÁTICA
+
+BIOLOGIA → explica o fenômeno
+COMPUTAÇÃO → processa os dados
+ESTATÍSTICA → ajuda a analisar os resultados
+BANCO DE DADOS → organiza o conhecimento
+TECNOLOGIA → permite trabalhar em escala
+PESQUISADOR → formula perguntas
 ```
 
-### Três perguntas de saída
+E finalize com três perguntas rápidas:
 
-1. O que diferencia um dado biológico bruto de informação biologicamente útil?
-2. Qual é a função de um banco de dados como o GenBank?
-3. Por que a qualidade dos dados deve ser verificada antes da análise?
+1. Por que a Bioinformática precisa de profissionais de diferentes áreas?
+2. Qual é a diferença entre uma sequência e um registro de banco de dados biológico?
+3. Qual é o papel da Computação dentro da Bioinformática?
 
 ---
 
-# O que NÃO aprofundar nesta primeira aula
+# O que deixar para as próximas aulas
 
-Para caber em 50 minutos, deixe para aulas posteriores:
+Nesta primeira aula **não aprofundar**:
 
-- mecanismos detalhados de replicação, transcrição e tradução;
-- alinhamento global/local em profundidade;
+- replicação, transcrição e tradução;
 - tipos de BLAST;
-- FASTQ e scores Phred em detalhes;
+- FASTQ e Phred;
 - filogenia;
 - RNA-Seq;
-- docking molecular;
-- PCA e SVD.
+- docking;
+- PCA e SVD;
+- SQL em profundidade;
+- modelagem relacional avançada.
 
-A primeira aula deve fazer o estudante entender **o problema computacional** antes de estudar as ferramentas especializadas.
+A progressão sugerida é:
+
+```text
+AULA 01
+O que é Bioinformática
+        ↓
+AULA 02
+Dados biológicos e bancos científicos
+        ↓
+AULA 03
+Comparação de sequências / BLAST
+        ↓
+AULA 04
+Pré-processamento e qualidade
+        ↓
+AULAS SEGUINTES
+Python, análise de dados e aplicações
+```
 
 ---
 
@@ -315,10 +551,10 @@ A primeira aula deve fazer o estudante entender **o problema computacional** ant
 Discentes Bioinformática UFPR  
 https://www.youtube.com/watch?v=9pkCA01EWy0
 
-Use o vídeo como apoio para a definição e contextualização inicial da área, e não como substituto da prática.
+Utilize como apoio para a contextualização da área.
 
 ---
 
-# Para a professora: explicação em uma frase
+# Síntese para a professora
 
-> **Bioinformática é a área que usa computação, estatística e métodos quantitativos para armazenar, organizar e analisar dados biológicos, transformando sequências e medições em informação útil para pesquisa e saúde.**
+> **Bioinformática é uma área interdisciplinar na qual profissionais da Biologia, Saúde, Computação, Estatística e Ciência de Dados utilizam tecnologias computacionais para armazenar, organizar, processar e analisar dados biológicos. Os bancos de dados biológicos permitem preservar e compartilhar esse conhecimento, enquanto algoritmos e ferramentas computacionais permitem compará-lo e transformá-lo em informação útil para a pesquisa.**
