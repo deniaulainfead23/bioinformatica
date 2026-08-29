@@ -15,138 +15,170 @@
 
 ---
 
-## `01` Sobre o projeto
+## Sobre o projeto
 
-Este repositório reúne material didático para aulas de **Bioinformática**, construído para aproximar estudantes da área de Tecnologia e Saúde do universo dos dados biológicos.
+Este repositório reúne materiais didáticos da disciplina **Tecnologia em Saúde e Bioinformática**, conectando vida, saúde, dados e computação.
 
-A ideia central é simples:
-
-```text
-VIDA                   DADOS                 COMPUTAÇÃO
- 🧬      ───────→       0101     ───────→       </>
-DNA / proteínas       sequências            algoritmos
-     \                                         /
-      \──────────── BIOINFORMÁTICA ───────────/
-```
-
-> **A vida produz dados. A Computação ajuda a organizar, comparar e analisar esses dados. A interpretação científica devolve significado ao resultado.**
+> **A vida produz dados. A Computação ajuda a organizar, processar e analisar esses dados. A interpretação científica devolve significado ao resultado.**
 
 ---
 
-## `02` A identidade BioCode
+## Organização das aulas
 
-O repositório adota uma personalidade que mistura dois universos:
+### Aula 01 - Introdução à disciplina, planejamento e tendências da TI em Saúde
 
-**Computação**  
-`Python` · `algoritmos` · `bancos de dados` · `strings` · `visualização` · `ciência de dados`
+Pontos principais:
 
-**Vida**  
-`DNA` · `genes` · `proteínas` · `organismos` · `saúde` · `dados biológicos`
+- leitura crítica de questões;
+- planejamento estratégico de TI;
+- ciclo de vida da tecnologia;
+- TI como parte da estratégia organizacional;
+- tendências da TI em saúde;
+- inovação, segurança, privacidade e regulação.
 
-A linguagem visual utiliza **azul profundo, ciano tecnológico e verde biológico**.
-
-➡️ [Conheça a identidade completa do projeto](IDENTIDADE.md)
-
----
-
-## `03` Como pensamos Bioinformática
-
-```text
-DADO BIOLÓGICO
-      ↓
-REPRESENTAÇÃO COMPUTACIONAL
-      ↓
-PRÉ-PROCESSAMENTO
-      ↓
-ALGORITMO
-      ↓
-ANÁLISE
-      ↓
-INTERPRETAÇÃO
-```
-
-O objetivo não é transformar a primeira aula em uma disciplina avançada de Biologia Molecular. Primeiro o estudante aprende a **enxergar o dado** e compreender como a Computação participa da análise.
+➡️ [Acessar Aula 01](aula01/README.md)
 
 ---
 
-## `04` Aulas
+### Aula 02 - Tecnologia da Informação e Saúde Digital
 
-### 🧬 Aula 01 | Quando a Biologia vira dado
+Pontos principais:
 
-Nesta aula, o estudante conhece:
+- TI aplicada à saúde;
+- saúde digital;
+- sistemas e aplicativos e-SUS;
+- Informática em Saúde;
+- dado → informação → conhecimento → decisão;
+- informação como recurso estratégico.
 
-- o conceito de Bioinformática;
-- a relação entre Biologia, Computação e Estatística;
-- DNA, genes, proteínas e sequências como dados computacionais;
+➡️ [Acessar Aula 02](aula02/README.md)  
+➡️ [Revisão da Aula 02](aula02/REVISAO.md)
+
+---
+
+### Aula 03 - Recursos Computacionais e ponte para a Bioinformática
+
+Pontos principais:
+
+- hardware e software;
+- CPU, clock, núcleos, threads e cache;
+- benchmark e desempenho;
+- aplicações em Farmácia e Biomedicina;
+- caráter multidisciplinar da Bioinformática;
+- Projeto Genoma Humano;
+- estruturas moleculares e interação proteína-fármaco.
+
+➡️ [Acessar Aula 03](aula03/README.md)  
+➡️ [Revisão da Aula 03](aula03/REVISAO.md)
+
+---
+
+### Aula 04 - Bioinformática: quando diferentes áreas se encontram
+
+Esta é a aula introdutória de Bioinformática que anteriormente estava identificada como Aula 01 neste repositório. A numeração foi corrigida.
+
+Pontos principais:
+
+- o que é Bioinformática;
+- áreas e profissionais envolvidos;
+- tecnologias utilizadas;
+- conceitos iniciais de banco de dados;
 - NCBI/GenBank, UniProt e PDB;
-- análise *in silico*;
-- qualidade e pré-processamento de dados;
-- uma primeira análise de sequências com Python.
+- BLAST;
+- pré-processamento;
+- primeira prática comentada em Python.
 
-**Material da aula**
-
-- [Roteiro completo](aula01/README.md)
-- [Google Colab / notebook](aula01/aula01_colab.ipynb)
-- [Atividade](aula01/atividade.md)
-- [Gabarito comentado](aula01/gabarito.md)
-- [Base de sequências](aula01/dados/sequencias_demo.csv)
+➡️ [Acessar Aula 04](aula04/README.md)  
+➡️ [Revisão da Aula 04](aula04/REVISAO.md)  
+➡️ [Notebook comentado](aula04/aula04_colab.ipynb)  
+➡️ [Atividade](aula04/atividade.md)  
+➡️ [Gabarito comentado](aula04/gabarito.md)
 
 ---
 
-## `05` Python para quem ainda não sabe Python
+## Revisão contínua
 
-Os notebooks deste projeto partem do princípio de que o estudante pode estar executando seu **primeiro código**.
+Cada aula possui uma seção de revisão com os conceitos que devem permanecer como base para as aulas seguintes.
 
-Por isso, cada prática procura explicar:
+A lógica do curso é cumulativa:
+
+```text
+TI EM SAÚDE
+      ↓
+INFORMAÇÃO E DECISÃO
+      ↓
+RECURSOS COMPUTACIONAIS
+      ↓
+BIOINFORMÁTICA
+      ↓
+BANCOS + ALGORITMOS + DADOS BIOLÓGICOS
+```
+
+---
+
+## Materiais da professora e Unidades de Aprendizagem
+
+Os PDFs das aulas produzidos pela professora podem acompanhar cada aula como material complementar.
+
+**Importante:** as Unidades de Aprendizagem **UA1 a UA5 são utilizadas apenas como fontes de estudo e apoio para a preparação das aulas e revisões. Elas não devem ser publicadas neste repositório.**
+
+---
+
+## Python para quem ainda não sabe Python
+
+Os notebooks partem do princípio de que o estudante pode estar executando seu primeiro código.
+
+Por isso, os exemplos explicam:
 
 ```python
 # O que o comando faz
-# Por que estamos utilizando o comando
-# O que o estudante deve observar no resultado
+# Por que estamos usando o comando
+# O que observar no resultado
 ```
-
-Funções, variáveis, bibliotecas e estruturas novas são apresentadas progressivamente. Código curto não é prioridade quando uma versão mais detalhada ajuda a compreender o algoritmo.
 
 ---
 
-## `06` Atividades e gabaritos
+## Atividades e gabaritos
 
-Toda atividade do projeto deve possuir um **gabarito separado**, com:
+Toda atividade nova deve possuir **gabarito separado e comentado**, contendo:
 
 - resposta;
 - explicação;
-- raciocínio utilizado;
+- raciocínio;
 - interpretação científica quando pertinente;
 - alerta quando os dados não permitirem uma conclusão biológica.
 
-O objetivo não é apenas descobrir **qual resposta está correta**, mas compreender **por que ela está correta**.
-
 ---
 
-## `07` Estrutura do repositório
+## Estrutura atual
 
 ```text
 bioinformatica/
-│
 ├── README.md
 ├── IDENTIDADE.md
-│
-└── aula01/
+├── aula01/
+│   └── README.md
+├── aula02/
+│   ├── README.md
+│   └── REVISAO.md
+├── aula03/
+│   ├── README.md
+│   └── REVISAO.md
+└── aula04/
     ├── README.md
-    ├── aula01_colab.ipynb
+    ├── REVISAO.md
+    ├── aula04_colab.ipynb
     ├── atividade.md
     ├── gabarito.md
     ├── pratica.py
-    │
+    ├── assets/
     └── dados/
         └── sequencias_demo.csv
 ```
 
-À medida que novas aulas forem adicionadas, a mesma organização deverá ser mantida.
-
 ---
 
-## `08` Bancos e ferramentas científicas
+## Bancos e ferramentas científicas
 
 | Recurso | Para que serve |
 |---|---|
@@ -155,14 +187,6 @@ bioinformatica/
 | [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) | Comparação de sequências |
 | [UniProt](https://www.uniprot.org/) | Sequências e anotações de proteínas |
 | [Protein Data Bank](https://www.rcsb.org/) | Estruturas tridimensionais de biomoléculas |
-
----
-
-## `09` Compromisso científico
-
-Os dados sintéticos utilizados nas atividades são identificados explicitamente como **dados didáticos**.
-
-Um resultado matematicamente correto não deve ser automaticamente transformado em uma conclusão biológica. Origem da amostra, qualidade, método de coleta, pré-processamento, banco de referência e contexto experimental precisam ser considerados.
 
 ---
 
