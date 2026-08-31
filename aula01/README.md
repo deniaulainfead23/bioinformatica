@@ -7,34 +7,20 @@ Esta revisão foi organizada a partir do material apresentado em aula. As Unidad
 ### 1. Como interpretar questões no modelo trabalhado
 
 Na aula foram destacadas três estratégias:
-
-- **análise crítica:** ler o caso-problema com atenção ao contexto;
-- **associação de proposições:** avaliar I, II e III individualmente antes de escolher a combinação;
-- **múltipla escolha:** eliminar alternativas logicamente incompatíveis antes de marcar a resposta.
+* A importância de compreender o cronograma e acompanhar.
+* Não perder avaliações e prazos.
+* Acompanhar aulas presenciais e no AVA.
 
 ### 2. Planejamento estratégico de TI
 
 O planejamento de sistemas de informação precisa responder a questões como:
 
 ```text
-Onde estamos?
-Onde queremos chegar?
-Como chegaremos lá?
+Onde estamos? Uso da Tecnologia
+Onde queremos chegar? Como usar da melhor forma
+Como chegaremos lá? Melhores práticas
 ```
 
-Também foi apresentado um ciclo de vida da TI em quatro fases:
-
-```text
-Planejamento
-    ↓
-Seleção / Aquisição
-    ↓
-Implementação
-    ↓
-Suporte
-```
-
-**Atenção:** selecionar fornecedores, contratar e adquirir a solução pertence à fase de **Seleção/Aquisição**, e não à fase de Planejamento.
 
 ### 3. TI como parte da estratégia organizacional
 
