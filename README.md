@@ -96,6 +96,22 @@ Pontos principais:
 
 ---
 
+### Aula 05 — Python 0: análise de dados aplicada à Bioinformática
+
+- variáveis, listas e dicionários;
+- leitura de CSV com pandas;
+- pré-processamento e valores ausentes;
+- conteúdo GC;
+- filtros, agrupamentos e gráficos;
+- interpretação científica responsável.
+
+➡️ [Acessar Aula 05](aula05/README.md)  
+➡️ [Notebook no Google Colab](https://colab.research.google.com/github/deniaulainfead23/bioinformatica/blob/main/aula05/python_0_colab.ipynb)  
+➡️ [Atividade](aula05/atividade.md)  
+➡️ [Gabarito](aula05/gabarito.md)
+
+---
+
 ## Revisão contínua
 
 Cada aula possui uma seção de revisão com os conceitos que devem permanecer como base para as aulas seguintes.
