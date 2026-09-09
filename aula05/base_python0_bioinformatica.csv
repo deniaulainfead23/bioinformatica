@@ -1,0 +1,25 @@
+id_amostra,grupo,dia_coleta,organismo_modelo,sequencia,qualidade_media,temperatura_c,resposta_percentual,laboratorio,observacao
+A01,Controle,1,Modelo_A,ATGCGTACGTAA,36,36.5,8,Lab_A,Sem alteração observada
+A02,Controle,2,Modelo_A,ATATGCGTATGCGA,35,36.6,9,Lab_A,Sem alteração observada
+A03,Controle,3,Modelo_A,GCGTACGATCGTACGA,37,36.4,7,Lab_A,Sem alteração observada
+A04,Controle,4,Modelo_B,ATGCCGTTAACCGGTA,34,36.7,10,Lab_B,Sem alteração observada
+A05,Controle,5,Modelo_B,TTATTAACGATATTAACG,33,36.5,11,Lab_B,Sem alteração observada
+A06,Controle,6,Modelo_B,GCGCGTACGCGGCCGTAA,38,36.6,9,Lab_B,Sem alteração observada
+A07,Controle,7,Modelo_C,ATGCGGCTAACGTAGCTAGC,36,36.8,12,Lab_C,Sem alteração observada
+A08,Controle,8,Modelo_C,AATTGCGCATATGCGTACGA,35,36.7,10,Lab_C,Sem alteração observada
+B01,Tratamento_A,1,Modelo_A,ATGCGTACGGCC,37,37.0,18,Lab_A,Resposta inicial
+B02,Tratamento_A,2,Modelo_A,GGCCTTAACCGGTA,38,37.1,24,Lab_A,Resposta crescente
+B03,Tratamento_A,3,Modelo_A,ATGCGCGTACGATCGA,39,37.2,31,Lab_A,Resposta crescente
+B04,Tratamento_A,4,Modelo_B,CGTACGATGCCCTTAA,36,37.0,37,Lab_B,Resposta crescente
+B05,Tratamento_A,5,Modelo_B,ATATGCGCGTTAACGGCC,35,37.3,42,Lab_B,Resposta moderada
+B06,Tratamento_A,6,Modelo_B,GCGTACGATCGGCTAACG,37,37.2,48,Lab_B,Resposta elevada
+B07,Tratamento_A,7,Modelo_C,ATGCCGTAACGGTTAACGGC,38,37.4,53,Lab_C,Resposta elevada
+B08,Tratamento_A,8,Modelo_C,GCGCGTACGATTAACCGGCA,39,37.3,57,Lab_C,Resposta elevada
+C01,Tratamento_B,1,Modelo_A,ATTAACGCGTAC,34,36.8,15,Lab_A,Resposta inicial
+C02,Tratamento_B,2,Modelo_A,GCGTATTAACGGCA,35,36.9,19,Lab_A,Resposta discreta
+C03,Tratamento_B,3,Modelo_A,ATGCCGATTAACGGCA,36,37.0,23,Lab_A,Resposta crescente
+C04,Tratamento_B,4,Modelo_B,CGCGTACGATTAACGG,33,37.1,29,Lab_B,Resposta crescente
+C05,Tratamento_B,5,Modelo_B,ATATGCGTTAACGGCCGA,,37.0,34,Lab_B,Qualidade não registrada
+C06,Tratamento_B,6,Modelo_B,GCGTACGATTAACCGGTA,35,37.2,39,Lab_B,Resposta moderada
+C07,Tratamento_B,7,Modelo_C,ATGCCGTAACGGTTAACGGC,37,37.1,,Lab_C,Resposta não registrada
+C08,Tratamento_B,8,Modelo_C,GCGTACGATTAACCGGCAAT,36,37.3,47,Lab_C,Resposta elevada
