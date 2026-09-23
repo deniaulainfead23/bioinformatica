@@ -116,6 +116,9 @@ Pontos principais:
 
 Cada aula possui uma seção de revisão com os conceitos que devem permanecer como base para as aulas seguintes.
 
+➡️ [Aula de hoje — resumo por tópicos](revisao/README.md)
+
+
 A lógica do curso é cumulativa:
 
 ```text
