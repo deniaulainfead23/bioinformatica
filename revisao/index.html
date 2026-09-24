@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c5a">
+<title>Revisão de Tecnologia em Saúde e Bioinformática</title>
+<style>
+:root{--ink:#18324b;--blue:#176b87;--teal:#dff3f1;--cream:#fbf8f1;--line:#d5e1e8;--green:#18794e}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:#23394c;font:17px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:900px;margin:auto;padding:22px 16px 48px}
+header{background:linear-gradient(125deg,#123c5a,#147b87);color:white;padding:24px;border-radius:20px}
+h1{font-size:clamp(27px,5vw,38px);line-height:1.15;margin:0 0 8px}header p{margin:0}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+a.button{display:inline-block;background:#176b87;color:white;padding:11px 16px;border-radius:11px;text-decoration:none;font-weight:750}
+a.button.alt{background:#e7eff3;color:#18324b;border:1px solid #d5e1e8}
+a:focus{outline:3px solid #f6bd4b;outline-offset:3px}
+section{background:white;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:14px 0}
+h2{font-size:23px;color:var(--ink);margin:0 0 10px}h3{font-size:19px;color:var(--blue);margin:18px 0 5px}
+p{margin:7px 0}ul{padding-left:22px;margin:7px 0}code{background:#eef4f6;padding:2px 5px;border-radius:5px}
+.callout{border-left:4px solid #48b2a3;background:#f0f8f7;padding:12px 14px;border-radius:8px;margin:12px 0}
+footer{color:#607487;font-size:14px;margin-top:20px}
+</style></head>
+<body><main>
+<header><h1>Revisão de Tecnologia em Saúde e Bioinformática</h1><p>Um roteiro direto para revisar os conceitos vistos em aula. Leia os tópicos e depois pratique no Quiz Revisão 1.</p></header>
+<nav><a class="button" href="./Quiz_Tecnologia_Saude_Bioinformatica.html">🧪 Fazer o Quiz Revisão 1</a><a class="button alt" href="../">← Página inicial da disciplina</a></nav>
+<section><h2>Dados, saúde e informação</h2><p>A tecnologia ajuda a registrar, organizar, consultar e analisar dados de saúde. A informação pode apoiar decisões, mas deve ser interpretada por profissionais considerando a qualidade e o contexto dos dados.</p></section>
+<section><h2>Bioinformática: áreas, bancos e ferramentas</h2><p>Bioinformática integra conhecimentos de Biologia, Saúde, Computação e análise quantitativa para organizar e analisar dados biológicos.</p>
+<h3>NCBI e GenBank</h3><p>O NCBI é um portal de recursos biológicos. O GenBank é um banco de dados de sequências de nucleotídeos, como sequências de DNA e RNA. Assim, NCBI é o portal; GenBank é um dos bancos de dados acessados por meio dele.</p>
+<h3>BLAST</h3><p>BLAST é uma ferramenta para comparar uma sequência de interesse com sequências presentes em bancos de referência. <strong>BLASTN</strong> compara sequências de nucleotídeos; <strong>BLASTP</strong> compara sequências de proteínas.</p>
+<div class="callout"><strong>Para não confundir:</strong> GenBank armazena registros de sequências; BLAST busca sequências semelhantes. Um resultado de similaridade apoia uma investigação, mas isoladamente não comprova função biológica nem estabelece diagnóstico.</div>
+<h3>Outros recursos mencionados na aula</h3><ul><li><strong>UniProt:</strong> sequências e informações sobre proteínas.</li><li><strong>PDB:</strong> estruturas tridimensionais de biomoléculas.</li></ul>
+<p><a href="https://github.com/deniaulainfead23/bioinformatica/blob/main/aula04/REVISAO.md">Abrir revisão completa da Aula 04</a></p></section>
+<section><h2>CSV e pandas</h2><p>CSV representa dados tabulares em texto. Cada linha é um registro ou amostra; cada coluna, uma variável. Em Python, pandas permite ler e inspecionar a tabela.</p><p><code>head()</code> mostra linhas iniciais; <code>shape</code> indica linhas e colunas; <code>columns</code> lista os nomes; <code>info()</code> resume tipos e estrutura; <code>isna().sum()</code> conta valores ausentes.</p><p>Antes da análise, confira completude, consistência, validade, coerência e possíveis duplicações. Um valor ausente não significa automaticamente zero.</p></section>
+<section><h2>Python básico usado nos exemplos</h2><p><code>input()</code> recebe uma entrada e <code>print()</code> exibe uma saída. Os tipos trabalhados incluem texto (<code>str</code>), inteiro (<code>int</code>), decimal (<code>float</code>) e lógico (<code>bool</code>). Listas reúnem valores; dicionários associam chaves e valores; <code>for</code> repete uma ação pelos elementos.</p><p>Um DataFrame organiza os dados em linhas e colunas. A partir dele, é possível criar uma coluna calculada, como o comprimento de uma sequência.</p><p><a href="https://colab.research.google.com/github/deniaulainfead23/bioinformatica/blob/main/aula05/python_0_colab.ipynb">Abrir o notebook de Python no Google Colab</a> · <a href="../aula05/base_python0_bioinformatica.csv">Baixar a base CSV</a></p></section>
+<section><h2>Gráficos e interpretação</h2><ul><li><strong>Barras:</strong> comparar categorias.</li><li><strong>Linhas:</strong> observar mudanças ao longo de uma sequência ou período.</li><li><strong>Setores:</strong> mostrar partes de um total.</li><li><strong>Dispersão:</strong> observar a relação entre duas variáveis.</li><li><strong>Histograma:</strong> visualizar a distribuição dos valores.</li></ul><p>Leia título, eixos, unidades e escala. Um gráfico mostra padrões nos dados, mas não prova sozinho que uma variável causou outra.</p></section>
+<section><h2>Como usar esta revisão</h2><ol><li>Leia os tópicos e anote o que ainda parece confuso.</li><li>Faça o Quiz Revisão 1.</li><li>Leia a explicação depois de cada resposta.</li><li>Volte ao material da aula relacionado à dúvida e tente a questão novamente.</li></ol><nav><a class="button" href="./Quiz_Tecnologia_Saude_Bioinformatica.html">Começar o quiz</a><a class="button alt" href="../">Voltar ao início</a></nav></section>
+<footer>Material didático de revisão para estudantes de Farmácia e Biomedicina. Conteúdo alinhado às aulas e aos materiais desta disciplina.</footer>
+</main></body></html>
