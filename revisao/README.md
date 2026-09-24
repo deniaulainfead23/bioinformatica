@@ -64,6 +64,19 @@ Leia título, eixos, unidades e escala para entender o que o gráfico mostra.
 
 Um gráfico resume os dados observados, mas não prova sozinho que uma variável causou outra. Considere a qualidade e o contexto da base antes de tirar conclusões.
 
+## 10. GenBank e BLAST: onde ficam e como comparar sequências
+
+- **NCBI:** portal com recursos e bancos de dados biológicos.
+- **GenBank:** banco de sequências de nucleotídeos, como DNA e RNA.
+- **BLAST:** ferramenta que compara uma sequência de interesse com sequências armazenadas em um banco.
+- **BLASTN:** pesquisa semelhanças entre sequências de nucleotídeos.
+- **BLASTP:** pesquisa semelhanças entre sequências de proteínas.
+
+Lembre-se: GenBank é um banco de dados; BLAST é uma ferramenta de comparação. Uma semelhança pode apoiar uma hipótese, mas sozinha não comprova a função de uma sequência nem estabelece um diagnóstico. Analise o resultado junto do contexto biológico e das demais evidências.
+
+➡️ [Abrir esta revisão em formato de página](./index.html)  
+➡️ [Revisão conceitual da Aula 04](../aula04/REVISAO.md)
+
 ## Materiais da aula
 
 - [Base CSV usada nos exemplos](../aula05/base_python0_bioinformatica.csv)
