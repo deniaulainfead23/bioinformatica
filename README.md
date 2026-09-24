@@ -21,6 +21,13 @@ Este repositório reúne materiais didáticos da disciplina **Tecnologia em Saú
 
 > **A vida produz dados. A Computação ajuda a organizar, processar e analisar esses dados. A interpretação científica devolve significado ao resultado.**
 
+### Quiz interativo da revisão
+
+➡️ [Abrir o quiz online](https://deniaulainfead23.github.io/bioinformatica/)
+
+Para disponibilizá-lo, em **Settings → Pages**, selecione **Deploy from a branch**, escolha **main** e **/(root)** e salve. O arquivo publicado é o `index.html` na raiz.
+
+
 ---
 
 ## Organização das aulas
