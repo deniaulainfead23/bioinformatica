@@ -1,4 +1,6 @@
 # Aula de hoje — Revisão
+QUIZ 
+https://deniaulainfead23.github.io/bioinformatica/
 
 Resumo de estudo baseado nos tópicos apresentados nas aulas de Tecnologia em Saúde e Bioinformática. O foco aqui é compreender e interpretar a base, com noções introdutórias de Python.
 
