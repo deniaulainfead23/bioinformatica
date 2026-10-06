@@ -1,0 +1,12 @@
+Timestamp,Nome do grupo ou código da equipe,Código da amostra,Qual é o material da amostra?,Qual é a concentração da amostra?,Qual é o pH observado?,Qual é a temperatura da amostra?,Qual é a cidade de origem da amostra didática?,Qual foi o resultado didático da análise?,Que problema de qualidade você imagina que pode aparecer nessa base?
+9/30/2026 19:57:14,Grupo1,A01,sangue,2,"6,8",38,Nova Iguaçu,inadequado ," ausência, duplicidade, grafia diferente, unidade ou valor fora do esperado."
+9/30/2026 20:25:46,Grupo rosa ,A02,Plasma ,"2,5","6,8","37,1",Nova Iguaçu ,Adequado ,Duplicidade 
+9/30/2026 20:27:13,Liliane e Luma ,U01,Urina,2.5,"5,5",27,Nova Iguaçu ,Adequado,Nenhuna
+9/30/2026 20:27:41,Grupo rosa ,A07,Sangue ,"2,5mg",7.2,37.1,Nova Iguaçu ,Adequado ,Ausência de dados 
+9/30/2026 20:27:41,Grupo rosa ,A08,Urina,2.5,"6,8","36,8",Nova Iguaçu ,Adequada ,Ausência de dados 
+9/30/2026 20:27:46,Carla e Rayssa ,A11,Sangue ,"5,2 mg/mL","6,8","36,8",Nova Iguaçu ,Inadequado ,Valor fora do esperado 
+9/30/2026 20:28:34,Farma-05,F05,Sangue ,"2,5 mg/ml","7,35","36,8",Nova Iguaçu ,Adequado ,
+9/30/2026 20:31:30,Grupo Rosa ,A02,Urina,"2,5mg/mL",5.8,36.8,Nova Iguaçu ,Adequado ,
+9/30/2026 20:40:30,Elaine Ferreira,A01,Plasma,"2,57,2",-18%,15,Rio de Janeiro ,Adequada,Ausencia 
+9/30/2026 20:46:14,Winx1,A01,Sangue,"2,5","6,8",37.1,Nova iguacu,Adequado,Duplicidade 
+9/30/2026 20:46:32,Equipe azul ,A04,Saliva ,2.5,6.9,36.9,Nova Iguaçu ,Foi posteriormente no python,Valor fora do esperando 
